@@ -1,14 +1,25 @@
-//
-//  main.cpp
-//  Lab11
-//
-//  Created by Chatchapong Thuaypha on 9/15/24.
-//
-
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    
+    int value1, value2;
+    int largerValue;
+    
+    cout << "Please enter the first number: " << endl;
+    cin >> value1;
+    
+    cout << "Please enter the second number: " << endl;
+    cin >> value2;
+    
+    if (value1 < value2) {
+        largerValue = value2;
+    } 
+    else {
+        largerValue = value1;
+    }
+
+    cout << "The larger value that was stored is: " << largerValue << endl;
+    
     return 0;
 }
